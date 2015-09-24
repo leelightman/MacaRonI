@@ -60,7 +60,6 @@ body {
   height: 500px;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -116,6 +115,9 @@ body {
   }
 
   /* Bump up size of carousel content */
+  .carousel-caption h1{
+  	text-align:left;
+  }
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -123,7 +125,7 @@ body {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
