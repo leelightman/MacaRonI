@@ -18,19 +18,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">	
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+	<link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   
   <body>
   <section class="header">
   <article>
-		<a href="index.html"><span class="logo">MIO<span class="greenfont">S</span></span></a>
+		<a href="index.html"><span class="logo">MIO<span class="redfont">S</span></span></a>
 	
 		<ul class="menubar">
 			<li><a href="log-in.html">Log In</a></li>				
@@ -41,21 +36,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<p class="clear"></p>
    <section class="bg">
   	<article>
-  		<div>
-  			<img src="image/cover.jpg" />
+  		<div class="left">
+  			<img src="image/1.jpg" />
+  		</div>
+  		<div class="right">
+  			<img src="image/2.jpg" />
+  		</div>
+  		<p class="clear"></p>
+  	</article>
+  </section> 
+  <section class="bg">
+  	<article>
+  		<div class="left">
+  			<img src="image/3.jpg" />
+  		</div>
+  		<div class="right">
+  			<img src="image/4.jpg" />
   		</div>
   		<p class="clear"></p>
   	</article>
   </section>
-  <section>
-  	<article>
-  		<div><h1>Hello, world!</h1>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script></div>
-  	</article>
-  </section>
+    
   </body>
 </html>

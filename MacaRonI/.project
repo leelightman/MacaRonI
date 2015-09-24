@@ -38,4 +38,36 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebRoot/image/1.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/temp/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/15au/CSE5911/1.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebRoot/image/2.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/temp/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/15au/CSE5911/2.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebRoot/image/3.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/temp/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/15au/CSE5911/3.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebRoot/image/4.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/temp/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/15au/CSE5911/4.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebRoot/image/cover.jpg</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/temp/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/15au/CSE5911/cover.jpg</locationURI>
+		</link>
+		<link>
+			<name>WebRoot/image/icon.png</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/temp/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/15au/CSE5911/icon.png</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
