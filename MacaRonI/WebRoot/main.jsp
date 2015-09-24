@@ -87,16 +87,12 @@
 							Medical Image Overlay <span class="greenfont">S</span>oftware
 						</h1>
 						<p>A new way of exploring our brain.</p>
-						<p>
-							<a class="btn btn-lg btn-primary" href="#" role="button">Sign
-								up today</a>
-						</p>
 					</div>
 				</div>
 			</div>
 			<div class="item">
 				<img class="second-slide"
-					src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+					src="image/database1.jpg"
 					alt="Second slide">
 				<div class="container">
 					<div class="carousel-caption">
@@ -111,7 +107,7 @@
 			</div>
 			<div class="item">
 				<img class="third-slide"
-					src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+					src="image/hololen1.jpg"
 					alt="Third slide">
 				<div class="container">
 					<div class="carousel-caption">
@@ -157,13 +153,16 @@
 		<div class="row featurette">
 			<div class="col-md-7">
 				<h2 class="featurette-heading">
-					Place holder. <span class="text-muted">It'll blow your mind.</span>
+					MIOS - <span class="text-muted">It'll blow your mind.</span>
 				</h2>
-				<p class="lead">Place holder</p>
+				<p class="lead">MIOS, Medical Imaging Overlay Software, is a
+					proposed augmented reality project to be implemented as a 3-D
+					supplementary tool in the medical field to expand on prior 2-D
+					knowledge.</p>
 			</div>
 			<div class="col-md-5">
 				<img class="featurette-image img-responsive center-block"
-					src="image/4.jpg" alt="Generic placeholder image">
+					src="image/yo.png" alt="Generic placeholder image">
 			</div>
 		</div>
 
@@ -172,10 +171,15 @@
 		<div class="row featurette">
 			<div class="col-md-7 col-md-push-5">
 				<h2 class="featurette-heading">
-					Oh yeah, it's that good. <span class="text-muted">See for
-						yourself.</span>
+					A new way <span class="text-muted">to explore our brain.</span>
 				</h2>
-				<p class="lead">Dicom / Nifti</p>
+				<p class="lead">The intended purpose of MIOS is for personnel to be able
+					to view a desired image (a patient's brain scan, injury, anatomy
+					atlas, etc.) and overlay it 1:1 on the patient or to have it
+					immediately available at that moment; additionally, its design can
+					incorporate multi-user collaboration for the purpose of diagnosis
+					and teaching while also presenting data instantly. Its use can be
+					tailored to the classroom, the operating room, or the clinic.</p>
 			</div>
 			<div class="col-md-5 col-md-pull-7">
 				<img class="featurette-image img-responsive center-block"
