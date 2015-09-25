@@ -7,6 +7,7 @@ html {
 body {
 	background-color: #1d1d1d;
 	margin: 0;
+	min-height:800px;
 }
 
 .two-thirds-left, .one-third-right, .two-left, .two-right {
@@ -61,7 +62,7 @@ footer p, footer a {
 }
 
 a {
-	color:#1dd0c1;
+	color: #1dd0c1;
 }
 
 h1, h2 {
@@ -167,6 +168,10 @@ button:hover, .button:hover {
 /* *********************************************
  *  button
  * ********************************************* */
+li.active a{
+	border-radius:6px;
+}
+
 .btn {
 	background: transparent;
 	border: 2px solid #1dd0c1;
@@ -174,14 +179,14 @@ button:hover, .button:hover {
 
 .btn:hover, .btn:active {
 	background: #14a397;
-	border-color:#1dd0c1;
+	border-color: #1dd0c1;
 }
 
 .main-search .form-control {
-	height:40px;
+	height: 40px;
 }
 
 .main-search .btn {
 	padding: 2px 16px;
-	border-left:none;
+	border-left: none;
 }
