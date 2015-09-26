@@ -123,21 +123,23 @@
 		</a>
 	</div>
 	<!-- /.carousel -->
-
+	<div class="main-search fullsize">
+		<!-- START THE FEATURETTES -->
+		<div class="container input-group">
+			<input type="text" class="form-control" placeholder="Name | MRN...">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button"><a href="team.jsp" target="_blank">
+					<img src="image/search.png" /></a>
+				</button>
+			</span>
+		</div>
+		</div>
 	<!-- Marketing messaging and featurettes
     ================================================== -->
 	<!-- Wrap the rest of the page in another container to center all the content. -->
 
-	<div class="main-search container marketing">
+	<div class="container marketing">
 		<!-- START THE FEATURETTES -->
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="Name | MRN...">
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="button">
-					<img src="image/search.png" />
-				</button>
-			</span>
-		</div>
 		<a name="about"></a>
 		<hr class="featurette-divider">
 
