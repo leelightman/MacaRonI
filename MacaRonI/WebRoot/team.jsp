@@ -24,8 +24,8 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!--script src="custom.js"></script-->
-<link href="carousel.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="style/carousel.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style/styles.css">
 </head>
 <script type="text/javascript">
 
