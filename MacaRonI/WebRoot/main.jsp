@@ -90,7 +90,7 @@
 					alt="Second slide">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Fully Functional Database</h1>
+						<h1>Half Functional Database</h1>
 						<p>It's amazing what a click can trigger.</p>
 						<p>
 							<a class="btn btn-lg btn-primary" href="#" role="button">Learn
