@@ -160,7 +160,7 @@ button:hover, .button:hover {
 
 .logo {
 	padding-left: 38px;
-	background-image: url("image/icon.png");
+	background-image: url("../image/icon.png");
 	background-repeat: no-repeat;
 	background-size: 30px auto;
 	background-position: left center;
