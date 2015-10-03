@@ -12,13 +12,13 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link href="http://tablefilter.free.fr/TableFilter/filtergrid.css"
 	rel="stylesheet" type="text/css" />
-<link rel="icon" href="image/favicon.ico">
+<link rel="icon" href="http://localhost:8080/MacaRonI/image/favicon.ico">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link href="style/carousel.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style/styles.css">
+<link href="http://localhost:8080/MacaRonI/style/carousel.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://localhost:8080/MacaRonI/style/styles.css ">
 
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

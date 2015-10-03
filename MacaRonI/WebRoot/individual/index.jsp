@@ -2,6 +2,7 @@
 <body>
 
     <div id="wrapper">
+<%@include file="../nav.jsp" %>
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
