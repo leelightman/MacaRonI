@@ -168,7 +168,7 @@ button:hover, .button:hover {
 }
 
 .navbar-brand {
-	padding: 25px 15px;
+	padding: 25px 15px !important;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {

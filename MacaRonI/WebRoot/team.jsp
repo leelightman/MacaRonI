@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 
 (function() {
-	 $.getJSON( "db/client.json", function( data ) {
+	 $.getJSON( "http://localhost:8080/MacaRonI/db/client.json", function( data ) {
 	  $.each( data.Sheet1, function( key, val ) {
 	  		  	window.console.log(key);
 	  var items = [];

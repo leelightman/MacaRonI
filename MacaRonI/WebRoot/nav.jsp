@@ -11,21 +11,21 @@
 							class="icon-bar"></span>
 					</button>
 					<!-- a class="navbar-brand" href="#">MIO<span class="greenfont">S</span></a-->
-					<a class="navbar-brand" href="main.jsp"><span class="logo">MIO<span
+					<a class="navbar-brand" href="http://localhost:8080/MacaRonI/main.jsp"><span class="logo">MIO<span
 							class="greenfont">S</span></span></a>
 
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="home active"><a href="main.jsp">Home</a></li>
-						<li class="database"><a href="database.jsp">Database</a></li>
-						<li class="about"><a href="main.jsp#about">About</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
+						<li class="home active"><a href="http://localhost:8080/MacaRonI/main.jsp">Home</a></li>
+						<li class="database"><a href="http://localhost:8080/MacaRonI/database.jsp">Database</a></li>
+						<li class="about"><a href="http://localhost:8080/MacaRonI/main.jsp#about">About</a></li>
+						<li class="dropdown"><a href="http://localhost:8080/MacaRonI/#" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false">More <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#contact">Contact</a></li>
-								<li><a href="#">Resource</a></li>
+								<li><a href="http://localhost:8080/MacaRonI/#contact">Contact</a></li>
+								<li><a href="http://www.osu.edu" target="_blank">Resource</a></li>
 							</ul></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
