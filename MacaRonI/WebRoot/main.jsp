@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 <%@include file="header.jsp"%>
-<!-- NAVBAR
-================================================== -->
 <body>
 	<%@include file="nav.jsp"%>
 	<!-- Carousel================================================== -->
