@@ -122,6 +122,7 @@ body {
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
+    z-index:200;
   }
 
   /* Bump up size of carousel content */

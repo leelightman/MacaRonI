@@ -7,7 +7,7 @@ html {
 body {
 	background-color: #1d1d1d;
 	margin: 0;
-	min-height:800px;
+	min-height: 800px;
 }
 
 .two-thirds-left, .one-third-right, .two-left, .two-right {
@@ -95,15 +95,15 @@ footer h3 {
 /* *********************************************
  *  beckground font basic
  * ********************************************* */
-.gray{
-	background-color:#ddd;
-	color:#1d1d1d;
+.gray {
+	background-color: #ddd;
+	color: #1d1d1d;
 }
 
-.fullsize{
-	width:100%;
-	padding:60px 0;
-	margin-top:20px;
+.fullsize {
+	width: 100%;
+	padding: 60px 0;
+	margin-top: 20px;
 }
 
 .center {
@@ -172,20 +172,21 @@ button:hover, .button:hover {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-    color: #ddd;
-    background-color: #333;
-    border-radius: 6px;
+	color: #ddd;
+	background-color: #333;
+	border-radius: 6px;
 }
+
 @media ( max-width : 768px) {
 	.navbar-brand {
-		padding: 15px 15px;
+		padding: 15px 15px!important;
 	}
 }
 /* *********************************************
  *  button
  * ********************************************* */
-li.active a{
-	border-radius:6px;
+li.active a {
+	border-radius: 6px;
 }
 
 .btn {
@@ -210,20 +211,31 @@ li.active a{
 /* *********************************************
  *  client page
  * ********************************************* */
-tr{
-	text-align:left;
+tr {
+	text-align: left;
 }
+
 #client-list tr {
-
-	width:150px;
-
+	width: 150px;
 }
-#client-list tr td{
-	height:70px;
-	overflow:auto;
+
+#client-list tr td {
+	height: 70px;
+	overflow: auto;
 }
-#client-list tr td div{
-	height:60px;
-	width:100px;
-	overflow-y:auto;
+
+#client-list tr td div {
+	height: 60px;
+	width: 100px;
+	overflow-y: auto;
+}
+
+/* *********************************************
+ *  individual mock page
+ * ********************************************* */
+@media ( min-width : 768px) {
+	#page-wrapper {
+		margin: 0 100px;
+		border-left:none;
+	}
 }

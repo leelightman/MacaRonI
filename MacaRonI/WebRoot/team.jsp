@@ -65,7 +65,9 @@ var tf2 = setFilterGrid("allClient", table2_Props);
 
 <body>
 	 <%@include file="nav.jsp"%>
-	<hr class="featurette-divider">
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			
 	<div class="container">
 		<div>
 			<div>

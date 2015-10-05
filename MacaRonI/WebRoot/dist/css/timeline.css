@@ -76,7 +76,7 @@
 }
 
 .timeline > li > .timeline-badge {
-    z-index: 100;
+    z-index: 10;
     position: absolute;
     top: 16px;
     left: 50%;
