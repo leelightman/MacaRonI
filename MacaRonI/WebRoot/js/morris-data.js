@@ -4,58 +4,48 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            HeartRate: 59,
+            BloodPressure: 70
         }, {
             period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            HeartRate: 78,
+            BloodPressure: 94
         }, {
             period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            HeartRate: 91,
+            BloodPressure: 69
         }, {
             period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            HeartRate: 73,
+            BloodPressure: 97
         }, {
             period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            HeartRate: 74,
+            BloodPressure: 91
         }, {
             period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            HeartRate: 65,
+            BloodPressure: 93
         }, {
             period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            HeartRate: 66,
+            BloodPressure: 79
         }, {
             period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            HeartRate: 60,
+            BloodPressure: 59
         }, {
             period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            HeartRate: 71,
+            BloodPressure: 60
         }, {
             period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            HeartRate: 84,
+            BloodPressure: 71
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['HeartRate', 'BloodPressure'],
+        labels: ['HeartRate', 'BloodPressure'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -64,13 +54,13 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
+            label: "p1",
             value: 12
         }, {
-            label: "In-Store Sales",
+            label: "p2",
             value: 30
         }, {
-            label: "Mail-Order Sales",
+            label: "p3",
             value: 20
         }],
         resize: true

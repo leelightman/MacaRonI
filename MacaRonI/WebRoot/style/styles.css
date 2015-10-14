@@ -238,4 +238,7 @@ tr {
 		margin: 0 100px;
 		border-left:none;
 	}
+
+.fa-shopping-cart:before {
+    content: "\f07a";
 }

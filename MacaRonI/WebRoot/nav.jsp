@@ -29,7 +29,7 @@
 							</ul></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="main.jsp#member">Our Team</a></li>
+						<li><a href="http://localhost:8080/MacaRonI/main.jsp#member">Our Team</a></li>
 						<li><a href="http://www.osu.edu/">Resource</a></li>
 					</ul>
 				</div>
