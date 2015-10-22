@@ -14,6 +14,7 @@
 					</a>
 				</button>
 			</span>
+			<i class="fa fa-user fa-5x"></i>
 		</div>
 	</div>
 	<!-- Marketing messaging and featurettes
