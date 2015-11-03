@@ -29,7 +29,7 @@
 		<div class="row featurette">
 			<div class="col-md-7">
 				<h2 class="featurette-heading">
-					MIOS - <span class="text-muted">It'll blow your mind.</span>
+					MIOS - <span class="text-muted">It will blow your mind.</span>
 				</h2>
 				<p class="lead">MIOS, Medical Imaging Overlay Software, is a
 					proposed augmented reality project to be implemented as a 3-D
