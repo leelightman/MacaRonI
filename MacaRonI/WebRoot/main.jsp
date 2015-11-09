@@ -6,15 +6,11 @@
 	<div class="main-search fullsize">
 		<!-- START THE FEATURETTES -->
 		<div class="container input-group">
-			<input type="text" class="form-control" placeholder="Name | MRN...">
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="button">
-					<a href="http://localhost:8080/MacaRonI/team.jsp" target="_blank">
-						<img src="image/search.png" />
-					</a>
-				</button>
-			</span>
-			<i class="fa fa-user fa-5x"></i>
+			<p class="middle-button">
+		        <a class="btn btn-lg btn-primary" role="button" href="http://localhost:8080/MacaRonI/database.jsp" >
+		          <span class="glyphicon glyphicon-cloud-download"></span> Database 
+		        </a>
+		    </p> 
 		</div>
 	</div>
 	<!-- Marketing messaging and featurettes
@@ -24,7 +20,6 @@
 	<div class="container marketing">
 		<!-- START THE FEATURETTES -->
 		<a name="about"></a>
-		<hr class="featurette-divider">
 
 		<div class="row featurette">
 			<div class="col-md-7">

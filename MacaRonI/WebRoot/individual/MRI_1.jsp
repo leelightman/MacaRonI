@@ -4,13 +4,22 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <%@include file="../header.jsp" %>
-  
-  <body>
-    <h1>This is MRI image reading page </h1>
-    <APPLET CODE="src.HelloWorld.class" WIDTH=150 HEIGHT=150>
-	</APPLET>
-  </body>
+<%@include file="../header.jsp"%>
+
+
+<body>
+	<%@include file="../nav.jsp"%>
+	<h1>This is MRI image reading page</h1>
+	<p>
+		<applet
+			archive="../applet/ij-embed.jar" code="ij.ImageJApplet.class" codebase=".">
+			<param value="../image/1.jpg" name="url1"></param>
+			<param value="../image/2.jpg" name="url1"></param>
+		</applet>
+	</p>
+	<!-- p>
+		<applet codebase="." code="com.helloapp.class" archive="../applet/Hello.jar"
+			width=750 height=550 security=all-permissions> </applet>
+	</p-->
+</body>
 </html>

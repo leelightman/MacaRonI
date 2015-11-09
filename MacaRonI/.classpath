@@ -18,5 +18,9 @@
 			<attribute name="owner.project.facets" value="jst.web.jstl"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/limanlan/Desktop/temp/my cloud/15au/CSE5911/windows-imgj/original/ImageJ/ij.jar"/>
+	<classpathentry kind="lib" path="/Users/limanlan/Desktop/HelloApp.jar"/>
+	<classpathentry kind="lib" path="/Users/limanlan/Desktop/Hello.jar"/>
+	<classpathentry kind="lib" path="WebRoot/applet/ij.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

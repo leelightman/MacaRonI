@@ -65,7 +65,7 @@
 			<p>&nbsp</p>
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="page-header">Jane M. Roberts.</h1>
+					<h1 class="page-header">Sheldon Lee Cooper</h1>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
@@ -105,7 +105,7 @@
 						</div>
 						<a href="#">
 							<div class="panel-footer">
-								<span class="pull-left">26</span> 
+								<span class="pull-left">35</span> 
 								<div class="clearfix"></div>
 							</div>
 						</a>
@@ -125,7 +125,7 @@
 						</div>
 						<a href="#">
 							<div class="panel-footer">
-								<span class="pull-left">F</span> 
+								<span class="pull-left">M</span> 
 								<div class="clearfix"></div>
 							</div>
 						</a>
@@ -144,6 +144,13 @@
 								</div>
 							</div>
 						</div>
+						<!-- <a href="MRI_1.jsp" target="_blank">
+							<div class="panel-footer">
+								<span class="pull-left">View Details</span> <span
+									class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+								<div class="clearfix"></div>
+							</div>
+						</a> -->
 						<a href="MRI_1.jsp" target="_blank">
 							<div class="panel-footer">
 								<span class="pull-left">View Details</span> <span
@@ -175,15 +182,11 @@
 											<h4 class="timeline-title">10-7-2015</h4>
 											<p>
 												<small class="text-muted"><i class="fa fa-user-md"></i>
-													Brain Tumor Stage 3</small>
+													First Scan</small>
 											</p>
 										</div>
 										<div class="timeline-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Libero laboriosam dolor perspiciatis omnis
-												exercitationem. Beatae, officia pariatur? Est cum veniam
-												excepturi. Maiores praesentium, porro voluptas suscipit
-												facere rem dicta, debitis.</p>
+											<p>Test1</p>
 										</div>
 									</div>
 								</li>
@@ -200,15 +203,7 @@
 											</p>
 										</div>
 										<div class="timeline-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Autem dolorem quibusdam, tenetur commodi provident
-												cumque magni voluptatem libero, quis rerum. Fugiat esse
-												debitis optio, tempore. Animi officiis alias, officia
-												repellendus.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Laudantium maiores odit qui est tempora eos, nostrum
-												provident explicabo dignissimos debitis vel! Adipisci eius
-												voluptates, ad aut recusandae minus eaque facere.</p>
+											<p>test2</p>
 										</div>
 									</div>
 								</li>
@@ -225,17 +220,8 @@
 											</p>
 										</div>
 										<div class="timeline-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Nobis minus modi quam ipsum alias at est molestiae
-												excepturi delectus nesciunt, quibusdam debitis amet, beatae
-												consequuntur impedit nulla qui! Laborum, atque.</p>
-											<hr>
+											<p>test3</p>
 											<div class="btn-group">
-												<button type="button"
-													class="btn btn-primary btn-sm dropdown-toggle"
-													data-toggle="dropdown">
-													<i class="fa fa-gear"></i> <span class="caret"></span>
-												</button>
 												<ul class="dropdown-menu" role="menu">
 													<li><a href="#">Action</a></li>
 													<li><a href="#">Another action</a></li>
@@ -260,11 +246,7 @@
 											</p>
 										</div>
 										<div class="timeline-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Deserunt obcaecati, quaerat tempore officia voluptas
-												debitis consectetur culpa amet, accusamus dolorum fugiat,
-												animi dicta aperiam, enim incidunt quisquam maxime neque
-												eaque.</p>
+											<p>test4</p>
 										</div>
 									</div>
 								</li>
@@ -273,6 +255,10 @@
 						<!-- /.panel-body -->
 					</div>
 					<!-- /.panel -->
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-lg-8 -->
+				<div class="col-lg-4">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<i class="fa fa-bar-chart-o fa-fw"></i> Measurements Tracking
@@ -293,17 +279,12 @@
 								</div>
 							</div>
 						</div>
+						
 						<!-- /.panel-heading -->
 						<div class="panel-body">
 							<div id="morris-area-chart"></div>
 						</div>
-						<!-- /.panel-body -->
-					</div>
-					<!-- /.panel -->
-				</div>
-				<!-- /.col-lg-8 -->
-				<div class="col-lg-4">
-					<div class="panel panel-default">
+						</div><div class="panel panel-default">
 						<div class="panel-heading">
 							<i class="fa fa-bell fa-fw"></i> Notifications Panel
 						</div>

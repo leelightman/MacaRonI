@@ -20,6 +20,7 @@
 						<li class="home active"><a href="http://localhost:8080/MacaRonI/main.jsp">Home</a></li>
 						<li class="database"><a href="http://localhost:8080/MacaRonI/database.jsp">Database</a></li>
 						<li class="about"><a href="http://localhost:8080/MacaRonI/main.jsp#about">About</a></li>
+						<li class="Manual"><a href="http://localhost:8080/MacaRonI/main.jsp#about">Manual</a></li>
 						<li class="dropdown"><a href="http://localhost:8080/MacaRonI/#" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false">More <span class="caret"></span></a>

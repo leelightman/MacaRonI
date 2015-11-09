@@ -26,4 +26,6 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script
 	src="http://tablefilter.free.fr/TableFilter/tablefilter_all_min.js"></script>
+<script
+	src="http://localhost:8080/MacaRonI/js/fuction.js"></script>
 </head>

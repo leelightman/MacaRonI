@@ -25,7 +25,7 @@
 						<h1>Fully Functional Database</h1>
 						<p>It's amazing what a click can trigger.</p>
 						<p>
-							<a class="btn btn-lg btn-primary" href="#" role="button">Learn
+							<a class="btn btn-lg btn-primary" href="http://localhost:8080/MacaRonI/database.jsp" role="button">Learn
 								more</a>
 						</p>
 					</div>

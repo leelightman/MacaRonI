@@ -65,6 +65,11 @@ a {
 	color: #1dd0c1;
 }
 
+.database a {
+	color: #5a5a5a;
+	font-size: 16px;
+}
+
 h1, h2 {
 	margin: 0px;
 	text-align: center;
@@ -179,7 +184,7 @@ button:hover, .button:hover {
 
 @media ( max-width : 768px) {
 	.navbar-brand {
-		padding: 15px 15px!important;
+		padding: 15px 15px !important;
 	}
 }
 /* *********************************************
@@ -203,42 +208,47 @@ li.active a {
 	height: 40px;
 }
 
+.middle-button {
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+}
+
 .main-search .btn {
-	padding: 2px 16px;
-	border-left: none;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+
+.main-search .btn a {
+	color: #fff;
 }
 
 /* *********************************************
- *  client page
+ *  applet
  * ********************************************* */
-tr {
-	text-align: left;
+applet{
+	width:90%;
+	height:90%;
+	display:block;
+	margin:0 auto;
 }
-
-#client-list tr {
-	width: 150px;
-}
-
-#client-list tr td {
-	height: 70px;
-	overflow: auto;
-}
-
-#client-list tr td div {
-	height: 60px;
-	width: 100px;
-	overflow-y: auto;
-}
-
 /* *********************************************
  *  individual mock page
  * ********************************************* */
 @media ( min-width : 768px) {
 	#page-wrapper {
 		margin: 0 100px;
-		border-left:none;
+		border-left: none;
 	}
-
-.fa-shopping-cart:before {
-    content: "\f07a";
+	.fa-shopping-cart:before {
+		content: "\f07a";
+	}
 }
+
+/* *********************************************
+ *  footer
+ * ********************************************* */
+ footer div{
+ 	padding:30px 0;
+ }
