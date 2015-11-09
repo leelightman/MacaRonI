@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="mri.project.domain.PatientInfo" table="patientinfo">
+	<id name="MRNumber" type="java.lang.Integer">
+	<column name="MRNumber" />
+	<generator class="native" />
+	</id>
+	<property name="PName" type="java.lang.String"><!--  配置实体类变量-->
+            <column name="PName" length="30" /><!--  数据库的字段名和字段长度  -->
+    </property>
+    <property name="PAge" type="java.lang.Integer"><!--  配置实体类变量-->
+            <column name="PAge" length="10" /><!--  数据库的字段名和字段长度  -->
+    </property>
+    <property name="PGender" type="java.lang.String"><!--  配置实体类变量-->
+            <column name="PGender" length="10" /><!--  数据库的字段名和字段长度  -->
+    </property>
+    <property name="NorD" type="java.lang.String"><!--  配置实体类变量-->
+            <column name="Nord" length="15" /><!--  数据库的字段名和字段长度  -->
+    </property>
+	</class>
+</hibernate-mapping>
