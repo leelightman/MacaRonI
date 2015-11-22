@@ -8,13 +8,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 <body>
-	<%@include file="../nav.jsp"%>
+	
 	<h1>This is MRI image reading page</h1>
 	<p>
-		<applet
-			archive="../applet/ij-embed.jar" code="ij.ImageJApplet.class" codebase=".">
-			<param value="../image/1.jpg" name="url1"></param>
-			<param value="../image/2.jpg" name="url1"></param>
+		<applet archive="../applet/AppletTest.jar" code="appExample.class">
 		</applet>
 	</p>
 	<!-- p>
