@@ -1,66 +1,9 @@
+<%@ taglib uri="/struts-tags" prefix="s" %>
+<!DOCTYPE html>
+<html lang="en">
 <%@include file="header.jsp"%>
 <!-- NAVBAR
 ================================================== -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".tabs-menu a").click(function(e) {
-			event.preventDefault();
-			$(this).parent().addClass("current");
-			$(this).parent().siblings().removeClass("current");
-			var tab = $(this).attr("href");
-			$(".tab-content").not(tab).css("display", "none");
-			$(tab).fadeIn();
-		});
-	});
-
-	(function() {
-		$.getJSON("http://localhost:8080/MacaRonI/db/client.json", function(
-				data) {
-			$.each(data.Sheet1, function(key, val) {
-				window.console.log(key);
-				var items = [];
-
-				$.each(val, function(itemkey, itemval) {
-					var th = [];
-					window.console.log(key);
-					window.console.log(itemkey);
-					th.push("<th><div>" + itemkey + "</div></th>");
-					items.push("<td><div>" + itemval + "</div></td>");
-				});
-
-				$("<tr/>", {
-					"class" : "my-new-list",
-					html : items.join("")
-				}).appendTo("#client-list");
-			})
-
-			;
-		});
-	})();
-
-	$(document).ready(function() {
-		(function($) {
-			$('#filter').keyup(function() {
-				var rex = new RegExp($(this).val(), 'i');
-				$('.searchable tr').hide();
-				$('.searchable tr').filter(function() {
-					return rex.test($(this).text());
-				}).show();
-
-			});
-
-		}(jQuery));
-
-	});
-	var table2_Props = {
-		col_5 : "select",
-		col_4 : "none",
-		display_all_text : " [ Show all ] ",
-		sort_select : true
-	};
-	var tf2 = setFilterGrid("allClient", table2_Props);
-</script>
-
 <body>
 	<%@include file="nav.jsp"%>
 	
@@ -124,36 +67,67 @@
 		</a>
 	</div>
 	<!-- /.carousel -->
-	<div class="container">
-		<div>
-			<div>
-				<input id="filter" type="text" class="form-control searchinput"
-					placeholder="Name | MRN" />
-			</div>
+	<div class="main-search container marketing">
+		<!-- START THE FEATURETTES -->
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Name | MRN...">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">
+					<img src="image/search.png" />
+				</button>
+			</span>
 		</div>
+		<a name="about"></a>
+
+		<!-- /END THE FEATURETTES -->
+    <table border="1" width="50%" align="center">
+    	<tr bgcolor="#cccc00">
+    	<td align="center">ID</td>
+    	<td align="center">MRNumber</td>
+    	<td align="center">PatientName</td>
+    	<td align="center">PatientAge</td>
+    	<td align="center">Gender</td>
+    	<td align="center">FileType</td>
+    	<td align="center">FilePath</td>
+    	</tr>
+    	<s:iterator value="%{#request.list}" var="patient">
+    	<tr>
+    	<td align="center"><s:property value="#patient.id" /></td>
+    	<td align="center"><s:property value="#patient.mrn" /></td>
+    	<td align="center"><s:property value="#patient.name" /></td>
+    	<td align="center"><s:property value="#patient.age" /></td>
+    	<td align="center"><s:property value="#patient.gender" /></td>
+    	<td align="center"><s:property value="#patient.ftype" /></td>
+    	<td align="center"><s:property value="#patient.file" /></td>
+    	<td align="center"><a href="delete.action?id=<s:property value='#patient.id'/>">delete patient</a></td>
+    	</tr>
+    	</s:iterator>
+    </table>
+    <a href="addPatient.jsp">Add new Patient</a>
+    <br>  <br>
+    <s:form action="findByName.action" method="post">
+    Patient Name: <s:textfield name="name"  />
+    <s:submit value="Search" />
+    </s:form>
+    <br>  <br>  <br>  <br> 
+    <s:form action="findByMRN.action" method="post">
+    Patient's MRNumber: <s:textfield name="mrn"  />
+    <s:submit value="Search" />
+    </s:form>
+
+		<!-- FOOTER -->
+		<footer>
+			<p class="pull-right">
+				<a href="#">Back to top</a>
+			</p>
+			<p>
+				&copy; MacaRonI Inc. &middot; <a href="#">Terms</a>
+			</p>
+		</footer>
+
+		<!-- /.container -->
 	</div>
-	<div class="fullsize gray database">
-		<div class="container gray">
-			<div>
-				<table id="allClient" class="table">
-					<thead>
-						<th>First Name</th>
-						<th>Middle</th>
-						<th>Last Name</th>
-						<th>Age</th>
-						<th>Gender</th>
-						<th>City</th>
-						<th>State</th>
-						<th>MRN</th>
-					</thead>
-					<tbody class="searchable" id="client-list">
-						</th>
-				</table>
-			</div>
-		</div>
-	</div>
-	<!-- FOOTER -->
-	<%@include file="footer.jsp"%>
+
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

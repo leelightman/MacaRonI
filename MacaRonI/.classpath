@@ -22,5 +22,7 @@
 	<classpathentry kind="lib" path="/Users/limanlan/Desktop/HelloApp.jar"/>
 	<classpathentry kind="lib" path="/Users/limanlan/Desktop/Hello.jar"/>
 	<classpathentry kind="lib" path="WebRoot/applet/ij.jar"/>
+	<classpathentry kind="lib" path="/Users/limanlan/Workspaces/MyEclipse 2015 CI/Servers/Tomcat/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Users/limanlan/Desktop/sourceTree/MacaRonI/MacaRonI/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.29-bin.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
