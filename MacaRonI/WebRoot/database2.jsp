@@ -63,10 +63,10 @@
 
 <body>
 	<%@include file="nav.jsp"%>
-	
+
 
 	<!-- Wrap the rest of the page in another container to center all the content. -->
-<!-- Carousel================================================== -->
+	<!-- Carousel================================================== -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -134,22 +134,20 @@
 	</div>
 	<div class="fullsize gray database">
 		<div class="container gray">
-			<div>
-				<table id="allClient" class="table">
-					<thead>
-						<th>First Name</th>
-						<th>Middle</th>
-						<th>Last Name</th>
-						<th>Age</th>
-						<th>Gender</th>
-						<th>City</th>
-						<th>State</th>
-						<th>MRN</th>
-					</thead>
-					<tbody class="searchable" id="client-list">
-						</th>
-				</table>
-			</div>
+			<table id="allClient" class="table">
+				<thead>
+					<th>First Name</th>
+					<th>Middle</th>
+					<th>Last Name</th>
+					<th>Age</th>
+					<th>Gender</th>
+					<th>City</th>
+					<th>State</th>
+					<th>MRN</th>
+				</thead>
+				<tbody class="searchable" id="client-list">
+					</th>
+			</table>
 		</div>
 	</div>
 	<!-- FOOTER -->

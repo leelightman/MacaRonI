@@ -1,29 +1,37 @@
-<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-    
-    <title>My JSP 'addPatient.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+<%@include file="header.jsp"%>
+<body>
+	<%@include file="nav.jsp"%>
+	<div class="add-patient fullsize gray database">
+		<div class="container gray">
+			<s:form action="add.action" method="post">
+				<fieldset class="span4">
+					<label>Name:</label>
+					<s:textfield name="name" label="Patient Name:" />
+					<label>MRN:</label>
+					<s:textfield name="mrn" label="MRNumber:" />
+				</fieldset>
+				<fieldset class="span4">
+					<label>Gender:</label>
+					
+					<s:select label="Patient Gender:" name="gender"
+						headerValue="Select" list="#{'Male':'Male', 'Female':'Female'}"
+						required="true" />
+					<label>Age:</label>
+					<s:textfield name="age" label="Patient Age:" />
+				</fieldset>
+				<fieldset class="span4">
+					<label>File Type:</label>
+					<s:textfield name="ftype" label="File Type:" />
+					<label>File Path:</label>
+					<s:textfield name="file" label="File Path:" />
+				</fieldset>
+				<span class="button"><s:submit value="Save" /></span>
+			</s:form>
+		</div>
+	</div>
+	<%@include file="footer.jsp"%>
 
-  </head>  
-   <s:form action="add.action" method="post">
-    Patient Name: <s:textfield name="name" label="Patient Name:" />
-    MRNumber:<s:textfield name="mrn" label="MRNumber:" />
-     Patient Gender:<s:textfield name="gender" label="Patient Gender:" />
-     File Type:<s:textfield name="ftype" label="File Type:" />
-     File Path:<s:textfield name="file" label="File Path:" />
-     Patient Age:<s:textfield name="age" label="Patient Age:" />
-    <s:submit value="Save" />
-    </s:form>
-  </body>
+</body>
 </html>
