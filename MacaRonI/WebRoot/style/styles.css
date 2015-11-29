@@ -10,7 +10,8 @@ body {
 	min-height: 800px;
 }
 
-.two-thirds-left, .one-third-right, .two-left, .two-right {
+.two-thirds-left, .one-third-right, .two-left, .two-right,
+.align-left,.align-right {
 	float: left;
 	width: 48%;
 	-ms-box-sizing: border-box;
@@ -20,6 +21,13 @@ body {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
+	.one-third-right,
+	.align-right{
+		float:right;
+	}
+		.one-third-right{
+			width: 32%;
+		}
 
 .two-thirds-left {
 	width: 65.8%;
@@ -56,7 +64,7 @@ p, li, button, input, select, a, h1, h2 {
 	text-align: left;
 	font-size: 18px;
 }
-	input {
+	input, button{
 		padding: 10px;
 	}
 
@@ -217,13 +225,19 @@ li.active a {
 	margin: 0 auto;
 }
 
+.database .btn, .database .btn-lg, .database .btm-primary {
+	margin-bottom: 5px;
+	padding:0;
+	text-align: center;
+	color: #fff;
+}
 .main-search .btn {
 	margin: 0 auto;
 	text-align: center;
 	display: block;
 }
 
-.main-search .btn a {
+.main-search .btn a, .database .btn a {
 	color: #fff;
 }
 
@@ -249,8 +263,12 @@ applet{
 	}
 }
 /* *********************************************
- *  form
+ *  database, form
  * ********************************************* */
+ input[value="search"]{
+ 	background:transparent;
+ 	border:0;
+ }
 .add-patient label{
 	width: 80px;
 }

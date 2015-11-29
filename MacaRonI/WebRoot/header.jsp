@@ -23,6 +23,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 <link href="http://localhost:8080/MacaRonI/style/carousel.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="http://localhost:8080/MacaRonI/style/styles.css ">
+<link href="http://localhost:8080/MacaRonI/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
