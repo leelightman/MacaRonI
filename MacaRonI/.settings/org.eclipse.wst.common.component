@@ -2,6 +2,7 @@
     <wb-module deploy-name="MacaRonI">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebRoot/individual/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="MacaRonI"/>
         <property name="java-output-path" value="/MacaRonI/WebRoot/WEB-INF/classes"/>
     </wb-module>

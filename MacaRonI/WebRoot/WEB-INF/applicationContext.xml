@@ -33,7 +33,7 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
         </property>
         <property name="mappingResources">
 		<list>
-		<value>com.mri.vo.Patient.xml</value>
+		<value>com/mri/vo/Patient.hbm.xml</value>
 		</list>
 		</property>
      </bean>

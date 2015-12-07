@@ -11,13 +11,14 @@
 					<label>Name:</label>
 					<s:textfield name="name" label="Patient Name:" /><hr>
 					<label>MRN:</label>
-					<s:textfield name="mrn" label="MRNumber:" /><hr>
+					<s:textfield name="mrn" label="MRNumber:" /> (Format: MRN-XXX-XXXX)
+					<hr>
 				</fieldset>
 				<fieldset class="span4">
 					<label>Gender:</label>
 
 					<s:select label="Patient Gender:" name="gender"
-						headerValue="Select" list="#{'Male':'Male', 'Female':'Female'}"
+						headerValue="Select" list="#{'N/A':'Select','Male':'Male', 'Female':'Female'}"
 						required="true" /><hr>
 					<label>Age:</label>
 					<s:textfield name="age" label="Patient Age:" /><hr>
@@ -25,12 +26,12 @@
 				<fieldset class="span4">
 					<label>File Type:</label>
 					<s:select label="File Type:" name="ftype" headerValue="Select"
-						list="#{'Nifti':'Nifti', 'Dicom':'Dicom', 'TIFF':'TIFF'}"
+						list="#{'N/A':'Select','Nifti':'Nifti', 'Dicom':'Dicom', 'TIFF':'TIFF'}"
 						required="true" /><hr>
 					<label>File Path:</label>
 					<s:textfield name="file" label="File Path:" /><hr>
 				</fieldset>
-				<i class="fa fa-floppy-o"><s:submit value="Save" /></i>
+				<span class="btn btn-primary"><i style="padding-left:10px; color:black;" class="fa fa-floppy-o"><s:submit value="Save" /></i></span>
 			</s:form>
 		</div>
 	</div>

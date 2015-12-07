@@ -29,5 +29,16 @@
 	 <result name="success">/searchResult.jsp</result>
 	 <result name="error">/error.jsp</result>
 	 </action>
+	 <action name="findPatients" class="com.mri.actions.PAction" method="findPatient">
+	 <result name="success">/searchResult.jsp</result>
+	 <result name="error">/error.jsp</result>
+	 </action>
+	 <action name="patientInfo" class="com.mri.actions.PAction" method="getPatientInfo">
+	 <result name="success">/individual/index.jsp</result>
+	 <result name="error">/error.jsp</result>
+	 </action>
+	 <action name="generateView" class="com.mri.actions.PAction" method="generateView">
+	 <result name="success">/individual/MRI_1.jsp</result>
+	 </action>
 	 </package>
 </struts>

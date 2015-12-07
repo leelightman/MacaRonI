@@ -8,7 +8,7 @@ public class BaseDAO implements IBaseDAO{
 	 private SessionFactory sessionFactory;
 	 
 	 public SessionFactory getSessionFactory() {
-	        return sessionFactory;    
+	        return sessionFactory;
 	 }
 	 public void setSessionFactory(SessionFactory sessionFactory) {
 	        this.sessionFactory = sessionFactory;

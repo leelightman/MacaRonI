@@ -265,14 +265,27 @@ applet{
 /* *********************************************
  *  database, form
  * ********************************************* */
- input[value="search"]{
+ input[value="Search"], input[value="Save"]{
  	background:transparent;
  	border:0;
+ }
+ input[name="tst"]{
+ 	width:350px;
+ 	margin-top:10px;
  }
 .add-patient label{
 	width: 80px;
 }
  
+#dataTable, #dataTable tr th, #dataTable tr td{
+	text-align:center;
+	border:0;
+}
+
+form#add select{
+	width:200px;
+	padding:10px;
+}
 /* *********************************************
  *  footer
  * ********************************************* */

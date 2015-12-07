@@ -7,7 +7,7 @@
 		<!-- START THE FEATURETTES -->
 		<div class="container input-group">
 			<p class="middle-button">
-		        <a class="btn btn-lg btn-primary" role="button" href="http://localhost:8080/MacaRonI/database.jsp" >
+		        <a class="btn btn-lg btn-primary" role="button" href="http://localhost:8080/MacaRonI/show.action" >
 		          <span class="glyphicon glyphicon-cloud-download"></span> Database 
 		        </a>
 		    </p> 
@@ -20,7 +20,6 @@
 	<div class="container marketing">
 		<!-- START THE FEATURETTES -->
 		<a name="about"></a>
-
 		<div class="row featurette">
 			<div class="col-md-7">
 				<h2 class="featurette-heading">

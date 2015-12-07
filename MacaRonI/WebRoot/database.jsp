@@ -7,15 +7,10 @@
 	<div class="database container marketing">
 		<div>
 			<div class="align-left">
-				<s:form action="findByName.action" method="post">
-					<s:textfield name="name" placeholder="Patient's Name" />
-					<a class="btn btn-lg btn-primary"><s:submit value="search" /></a>
-				</s:form>
-			</div>
-			<div class="align-right">
-				<s:form action="findByMRN.action" method="post">
-					<s:textfield name="mrn" placeholder="MRN" />
-					<a class="btn btn-lg btn-primary"><s:submit value="search" /></a>
+			<span style="font-size:20px;">Patient's Name or MRNumber: </span>
+				<s:form action="findPatients.action" method="post"><s:textfield
+						name="tst" />
+					<span class="btn btn-primary"><i style="padding-left:10px;" class="fa fa-search"></i><s:submit value="Search" /></span>
 				</s:form>
 			</div>
 			<p class="clear"></p>
@@ -24,30 +19,27 @@
 	<!-- /END THE FEATURETTES -->
 	<div class="fullsize gray database">
 		<div class="container gray">
-			<table id="allClient" class="table">
+			<table id="dataTable" class="table">
 				<tr>
-					<td align="center">MRN</td>
-					<td align="center">Patient Name</td>
-					<td align="center">Patient Age</td>
-					<td align="center">Gender</td>
-					<td align="center">File Type</td>
-					<td align="center">File Path</td>
+					<th>ID</td>
+					<th>MRN</td>
+					<th>Patient Name</td>
+					<th>Patient Age</td>
+					<th>Gender</td>
 				</tr>
 				<s:iterator value="%{#request.list}" var="patient">
 					<tr>
-						<td align="center"><s:property value="#patient.mrn" /></td>
-						<td align="center"><s:property value="#patient.name" /></td>
-						<td align="center"><s:property value="#patient.age" /></td>
-						<td align="center"><s:property value="#patient.gender" /></td>
-						<td align="center"><s:property value="#patient.ftype" /></td>
-						<td align="center"><s:property value="#patient.file" /></td>
-						<td align="center"><a
-							href="delete.action?id=<s:property value='#patient.id'/>">delete
-								patient</a></td>
+					    <td><s:property value="#patient.id" /></td>
+						<td><s:property value="#patient.mrn" /></td>
+						<td><a href="patientInfo.action?id=<s:property value='#patient.id'/>"><s:property value="#patient.name" /></a></td>
+						<td><s:property value="#patient.age" /></td>
+						<td><s:property value="#patient.gender" /></td>
 					</tr>
 				</s:iterator>
 			</table>
-			<p><a href="addPatient.jsp"><i class="fa fa-plus-square fa-2x"></i></a></p>
+			<p>
+				<a href="addPatient.jsp"><i class="fa fa-plus-square fa-2x"></i></a>
+			</p>
 		</div>
 	</div>
 	<!-- FOOTER -->

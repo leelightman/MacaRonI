@@ -1,3 +1,4 @@
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,24 +22,28 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 <!-- Bootstrap Core CSS -->
-<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css"
+<link
+	href="../MacaRonI/bower_components/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 
 <!-- MetisMenu CSS -->
-<link href="../bower_components/metisMenu/dist/metisMenu.min.css"
+<link
+	href="../MacaRonI/bower_components/metisMenu/dist/metisMenu.min.css"
 	rel="stylesheet">
 
 <!-- Timeline CSS -->
-<link href="../dist/css/timeline.css" rel="stylesheet">
+<link href="../MacaRonI/dist/css/timeline.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+<link href="../MacaRonI/dist/css/sb-admin-2.css" rel="stylesheet">
 
 <!-- Morris Charts CSS -->
-<link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+<link href="../MacaRonI/bower_components/morrisjs/morris.css"
+	rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="../bower_components/font-awesome/css/font-awesome.min.css"
+<link
+	href="../MacaRonI/bower_components/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 <link href="http://localhost:8080/MacaRonI/style/carousel.css"
 	rel="stylesheet">
@@ -62,109 +67,126 @@
 
 		<%@include file="../nav.jsp"%>
 		<div id="page-wrapper">
-			<p>&nbsp</p>
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="page-header">Sheldon Lee Cooper</h1>
-				</div>
-				<!-- /.col-lg-12 -->
-			</div>
-			<!-- /.row -->
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-stethoscope fa-5x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
-									<div class="huge">MRN</div>
-								</div>
-							</div>
-						</div>
-						<a href="#">
-							<div class="panel-footer">
-								<span class="pull-left">MR-534-4765</span> 
-								<div class="clearfix"></div>
-							</div>
-						</a>
+			<s:iterator value="%{#request.list}" var="patient">
+				<p>&nbsp</p>
+				<p>&nbsp</p>
+				<div class="row" style="margin-bottom:20px;border-bottom:1px solid #ddd;padding-bottom:10px;">
+					<div class="col-lg-4" style="text-align:left;">
+						<span><a style="color:#ccc;"
+							href="show.action"><i class="fa fa-arrow-left fa-2x"></i></a></span>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="panel panel-green">
-						<div class="panel-heading">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-heart fa-5x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
-									<div class="huge">Age</div>
-								</div>
-							</div>
-						</div>
-						<a href="#">
-							<div class="panel-footer">
-								<span class="pull-left">35</span> 
-								<div class="clearfix"></div>
-							</div>
-						</a>
+					<div class="col-lg-4" style="text-align:center;">
+						<span style="font-size:35px;margin:10px;" class="h1"><s:property
+								value="#patient.name" /></span>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="panel panel-yellow">
-						<div class="panel-heading">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-user fa-5x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
-									<div class="huge">Gender</div>
-								</div>
-							</div>
-						</div>
-						<a href="#">
-							<div class="panel-footer">
-								<span class="pull-left">M</span> 
-								<div class="clearfix"></div>
-							</div>
-						</a>
+					<div class="col-lg-4" style="text-align:right;">
+						<span><a
+							style="background:transparent; color:#ccc;"
+							href="delete.action?id=<s:property value='#patient.id'/>"><i
+								class="fa fa-trash fa-2x"></i></a></span>
 					</div>
+					<!-- /.col-lg-12 -->
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="panel panel-red">
-						<div class="panel-heading">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-support fa-5x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
-									<div class="huge">MRI</div>
-									<div>DICOM / NIFTI</div>
+				<!-- /.row -->
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-stethoscope fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">MRN</div>
+									</div>
 								</div>
 							</div>
+							<a href="#">
+								<div class="panel-footer">
+									<span class="pull-left"><s:property value="#patient.mrn" /></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
 						</div>
-						<!-- <a href="MRI_1.jsp" target="_blank">
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-green">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-heart fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">Age</div>
+									</div>
+								</div>
+							</div>
+							<a href="#">
+								<div class="panel-footer">
+									<span class="pull-left"><s:property value="#patient.age" /></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-yellow">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-user fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">Gender</div>
+									</div>
+								</div>
+							</div>
+							<a href="#">
+								<div class="panel-footer">
+									<span class="pull-left"><s:property
+											value="#patient.gender" /></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-red">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-support fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">MRI</div>
+										<div>
+											<s:property value="#patient.ftype" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <a href="MRI_1.jsp" target="_blank">
 							<div class="panel-footer">
 								<span class="pull-left">View Details</span> <span
 									class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
 								<div class="clearfix"></div>
 							</div>
 						</a> -->
-						<a href="MRI_1.jsp" target="_blank">
-							<div class="panel-footer">
-								<span class="pull-left">View Details</span> <span
-									class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-								<div class="clearfix"></div>
-							</div>
-						</a>
+							<a href="http://localhost:8080/MacaRonI/individual/MRI_1.jsp" target="_blank">
+								<div class="panel-footer">
+									<span class="pull-left"><a href="generateView.action?fpath=<s:property value='#patient.file'/>">View Details</a></span> <span
+										class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
+			</s:iterator>
 			<!-- /.row -->
 			<div class="row">
 				<div class="col-lg-8">
-					
+
 					<!-- /.panel -->
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -279,12 +301,13 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<!-- /.panel-heading -->
 						<div class="panel-body">
 							<div id="morris-area-chart"></div>
 						</div>
-						</div><div class="panel panel-default">
+					</div>
+					<div class="panel panel-default">
 						<div class="panel-heading">
 							<i class="fa fa-bell fa-fw"></i> Notifications Panel
 						</div>
@@ -308,7 +331,7 @@
 								</a> <a href="#" class="list-group-item"> <i
 									class="fa fa-warning fa-fw"></i> No Alert <span
 									class="pull-right text-muted small"><em>10:57 AM</em> </span>
-								</a> 
+								</a>
 							</div>
 							<!-- /.list-group -->
 							<a href="#" class="btn btn-default btn-block">View All Alerts</a>
@@ -317,17 +340,17 @@
 					</div>
 					<!-- /.panel -->
 					<div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-pie-chart fa-fw"></i> Pie Chart Example
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
+						<div class="panel-heading">
+							<i class="fa fa-pie-chart fa-fw"></i> Pie Chart Example
+						</div>
+						<div class="panel-body">
+							<div id="morris-donut-chart"></div>
+							<a href="#" class="btn btn-default btn-block">View Details</a>
+						</div>
+						<!-- /.panel-body -->
+					</div>
 					<!-- /.panel -->
-					
+
 					<!-- /.panel .chat-panel -->
 				</div>
 				<!-- /.col-lg-4 -->
@@ -340,21 +363,23 @@
 	<!-- /#wrapper -->
 
 	<!-- jQuery -->
-	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../MacaRonI/bower_components/jquery/dist/jquery.min.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script
+		src="../MacaRonI/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- Metis Menu Plugin JavaScript -->
-	<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+	<script
+		src="../MacaRonI/bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
 	<!-- Morris Charts JavaScript -->
-	<script src="../bower_components/raphael/raphael-min.js"></script>
-	<script src="../bower_components/morrisjs/morris.min.js"></script>
-	<script src="../js/morris-data.js"></script>
+	<script src="../MacaRonI/bower_components/raphael/raphael-min.js"></script>
+	<script src="../MacaRonI/bower_components/morrisjs/morris.min.js"></script>
+	<script src="../MacaRonI/js/morris-data.js"></script>
 
 	<!-- Custom Theme JavaScript -->
-	<script src="../dist/js/sb-admin-2.js"></script>
+	<script src="../MacaRonI/dist/js/sb-admin-2.js"></script>
 
 </body>
 

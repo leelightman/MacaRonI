@@ -33,4 +33,10 @@ public class PatientService implements IPatientService{
 	public List<Patient> getPatientByMRN(String mrn){
 		return patientDAO.getPatientByMRN(mrn);
 	}
+	public List<Patient> getPatient(String tst){
+		return patientDAO.getPatient(tst);
+	}
+	public List<Patient> getPatientByID(Integer id){
+		return patientDAO.getPatientByID(id);
+	}
 }

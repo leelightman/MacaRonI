@@ -5,7 +5,7 @@ import org.apache.struts2.interceptor.ServletRequestAware;
 import com.mri.vo.Patient;
 import com.mri.service.Impl.IPatientService;
 import com.opensymphony.xwork2.ActionSupport;
-
+import com.mri.localvv.Volume_Viewer;
 @SuppressWarnings("serial")
 public class PAction extends ActionSupport implements ServletRequestAware{
 	 private HttpServletRequest request = null;
@@ -17,6 +17,14 @@ public class PAction extends ActionSupport implements ServletRequestAware{
 		private String gender = null;
 		private String ftype = null;
 		private String file = null;
+		private String tst = null;
+		private String fpath =null;
+		public String getTst(){
+			return tst;
+		}
+		public void setTst(String tst){
+			this.tst = tst;
+		}
 		public Integer getId() {
 			return id;
 		}
@@ -75,6 +83,7 @@ public class PAction extends ActionSupport implements ServletRequestAware{
 			 
 		 }
 		 else{
+			 	//System.out.println("using src");
 				 request.setAttribute("list", list);
 				 return SUCCESS;
 			 }
@@ -124,6 +133,26 @@ public class PAction extends ActionSupport implements ServletRequestAware{
 			 }
 	 }
 	 
+	 public String generateView(){
+		 //System.out.println("111"+fpath);
+		 fpath = request.getParameter("fpath");
+		 Volume_Viewer.create(fpath);
+		 return SUCCESS;
+	 }
+
+	 public String getPatientInfo(){
+		 String id = request.getParameter("id");
+		 List<Patient> list = getPatientService().getPatientByID(Integer.valueOf(id));
+		 if(list==null||list.size()<1){
+			 System.out.println("list is empty");
+			 return ERROR;
+			 
+		 }
+		 else{
+				 request.setAttribute("list", list);
+				 return SUCCESS;
+			 }
+	 }
 	 public String findPatientByName(){
 		 Patient p = new Patient();
 		 p.setName(name);
@@ -134,7 +163,7 @@ public class PAction extends ActionSupport implements ServletRequestAware{
 		 }
 		 else{
 			 request.setAttribute("list", list);
-			 System.out.println("Name:"+list.get(0).getName());
+			 //System.out.println("Name:"+list.get(0).getName());
 			 return SUCCESS;
 			 }
 		 }
@@ -153,10 +182,30 @@ public class PAction extends ActionSupport implements ServletRequestAware{
 			 }
 		 
 	 }
+	 public String findPatient(){
+		 //System.out.println(tst);
+		 List<Patient> list = getPatientService().getPatient(tst);
+		 if(list==null||list.size()<1){
+			 System.out.println("No search results");
+			 return ERROR;
+		 }
+		 else{
+			 request.setAttribute("list", list);
+			
+			 return SUCCESS;
+			 }
+	 }
+
 	@Override
 	public void setServletRequest(HttpServletRequest request) {
 		this.request = request;
 		
+	}
+	public String getFpath() {
+		return fpath;
+	}
+	public void setFpath(String fpath) {
+		this.fpath = fpath;
 	}
 
 }

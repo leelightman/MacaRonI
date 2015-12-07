@@ -1,5 +1,6 @@
 package com.mri.dao.Impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Transaction;
@@ -138,6 +139,18 @@ public class PatientDAO extends BaseDAO implements IPatientDAO{
 		
 	}
 	@SuppressWarnings("unchecked")
+	public List<Patient> getPatientByID(Integer id){
+		Session session = null;
+		session = getSession();
+		List<Patient> patients = new ArrayList<Patient>();
+		String hql = "from Patient p where p.id = ?";
+		Query query  = session.createQuery(hql);
+		query.setParameter(0, id);
+		patients = query.list();
+		return patients;
+	}
+	
+	@SuppressWarnings("unchecked")
 	public List<Patient> getPatientByName(String name){
 		Session session = null;
 		session = getSession();
@@ -158,6 +171,33 @@ public class PatientDAO extends BaseDAO implements IPatientDAO{
 		Query query2 = session.createQuery(hql);
 		query2.setParameter(0, mrn);
 		patients = query2.list();
+		return patients;
+	}
+	@SuppressWarnings("unchecked")
+	public List<Patient> getPatient(String tst){
+		Session session = null;
+		session = getSession();
+		List<Patient> p1 = new ArrayList<Patient>();
+		List<Patient> p2 = new ArrayList<Patient>();
+		List<Patient> patients = new ArrayList<Patient>();
+		String hq1 = "from Patient p where p.name like :name";
+		Query query1 = session.createQuery(hq1);
+		query1.setString("name","%"+tst+"%");
+		p1 = query1.list();
+		String hq2 = "from Patient p where p.mrn like :mrn";
+		Query query2 = session.createQuery(hq2);
+		query2.setString("mrn", tst);
+		p2 = query2.list();
+		if(p1 == null||p1.size()<1){
+			System.out.println("p1 is empty");
+		}else{
+			patients.addAll(p1);
+		}
+		if(p2 == null||p2.size()<1){
+			System.out.println("p2 is empty");
+		}else{
+			patients.addAll(p2);
+		}
 		return patients;
 	}
 }
