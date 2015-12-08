@@ -62,9 +62,7 @@
 <body style="background:#ddd">
 
 	<div id="wrapper">
-
 		<!-- Navigation -->
-
 		<%@include file="../nav.jsp"%>
 		<div id="page-wrapper">
 			<s:iterator value="%{#request.list}" var="patient">
